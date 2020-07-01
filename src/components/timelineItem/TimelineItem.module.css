@@ -1,0 +1,17 @@
+.container {
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.title {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: smaller;
+}
