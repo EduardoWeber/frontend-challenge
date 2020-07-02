@@ -3,13 +3,13 @@ import styles from './SocialMedia.module.css';
 import getIconByName from '../../utils/IconHelper';
 
 function SocialMedia(props) {
-  const { icon, isActive = false, url = '' } = props;
+  const { icon, url = '' } = props;
 
-  let color = isActive ? '#4d4d4d' : '#b3b3b3';
+  let color = url ? '#4d4d4d' : '#b3b3b3';
 
   return (
     <div className={styles.container}>
-      {isActive && url ? (
+      {url ? (
         <a href={url}>{getIconByName(icon, color)}</a>
       ) : (
         getIconByName(icon, color)
