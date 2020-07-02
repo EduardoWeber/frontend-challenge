@@ -2,6 +2,15 @@ import React from 'react';
 import styles from './Indicator.module.css';
 
 function Indicator(props) {
+  const {
+    value,
+    title,
+    subtitle,
+    color = 'blue',
+    isSelected = false,
+    isSelectable = false,
+  } = props;
+
   function getClassName() {
     let className = [styles.container];
     if (!isSelected && isSelectable) {
@@ -15,15 +24,6 @@ function Indicator(props) {
     }
     return className.join(' ');
   }
-
-  const {
-    value,
-    title,
-    subtitle,
-    color = 'blue',
-    isSelected = false,
-    isSelectable = false,
-  } = props;
 
   return (
     <span className={getClassName()}>
