@@ -1,0 +1,34 @@
+.userHeader {
+    display: flex;
+    margin: 10px 0;
+}
+
+.userAvatar {
+    width: 80px;
+    height: 80px;
+    background-color: #bdbdbd;
+    border-radius: 40px;
+}
+
+.userInfo {
+    margin-left: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.userName {
+    font-size: large;
+}
+
+.userCompany {
+    font-size: medium;
+}
+
+.userState {
+    font-size: smaller;
+    padding: 5px 10px;
+    background-color: #C8E6C9;
+    border-radius: 5px;
+}
