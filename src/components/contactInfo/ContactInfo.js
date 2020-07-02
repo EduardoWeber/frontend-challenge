@@ -3,7 +3,7 @@ import styles from './ContactInfo.module.css';
 import getIconByName from '../../utils/IconHelper';
 
 function ContactInfo(props) {
-  const { icon, value, description, color = 'yellow' } = props;
+  const { icon, value, description, color = '#4d4d4d' } = props;
 
   return (
     <div className={styles.container}>
