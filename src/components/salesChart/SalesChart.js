@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './SalesChart.module.css';
 import Card from '../card';
 import { Bar } from 'react-chartjs-2';
 import './Canvas.css';
