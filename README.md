@@ -1,68 +1,265 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+- [Introdução](#Introdução)
+- [Documentação](#Documentação)
+ - [Componentes](#Componentes)
+ - [Packages utilizados](#Packages-utilizados)
 
-In the project directory, you can run:
+
+#Introdução
+## Descrição do projeto
+Nesse projeto foi reproduzido a tela proposta na [frontend-challenge](https://github.com/WealthSystems/frontend-challenge) da WealthSystems
+
+## Setup do projeto
+
+No diretório raiz do projeto execute:
+### `yarn`
+Para baixar as dependencias necessárias
+
+## Scripts disponíveis
+
+No diretório raiz do projeto você pode executar os seguintes comandos
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Roda a aplicação no modo de desenvolvimento<br />
+Abra [http://localhost:3000](http://localhost:3000) para vizualizar o projeto.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Faz o *build* do projeto pra pasta `build`.<br />
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#Documentação
+(#componentes)
+##Componentes
+###Activities
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![](https://i.imgur.com/TxOjmki.png)
 
-### `yarn eject`
+| Parametro | Descrição |
+| ------------ | ------------ |
+| data | Recebe um vetor com a estrutura especificada abaixo  |
+```
+[
+	{
+		title: String,
+		contact: String,
+		type: String ['call', 'meeting', 'event', 'email'],
+		date: String,
+		category: String ['late', 'underway', 'expected', 'finished']
+	}
+]
+```
+###Card
+| Parametro | Descrição |
+| ------------ | ------------ |
+| title | Titulo do card |
+| children* | Conteudo do card |
+**children não é uma prop e sim o conteudo que se encontra entre <Card> e </Card>*
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###CreditLimit
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](https://i.imgur.com/zw32yiE.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Parametro | Descrição |
+| ------------ | ------------ |
+| data | Recebe um objeto com a estrutura especificada abaixo |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+{
+	granted: Number,
+	avaliable: Number
+}
+```
 
-## Learn More
+###FinancialSecurities
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](https://i.imgur.com/dlHDCzk.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Parametro | Descrição |
+| ------------ | ------------ |
+| data | Recebe um objeto com a estrutura especificada abaixo |
+```
+{
+	overdue: { 
+		amount: Number,
+		value: String
+	},
+	nearOverdue: {
+		amount: Number,
+		value: String
+	},
+	paid: {
+		amount: Number,
+		value: String
+	}
+}
+```
 
-### Code Splitting
+###GeneralInfo
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![](https://i.imgur.com/R5nJEYf.png)
 
-### Analyzing the Bundle Size
+| Parametro | Descrição |
+| ------------ | ------------ |
+| data | Recebe um objeto com a estrutura especificada abaixo |
+```
+{
+	name: String,
+	company: String,
+	isActive: Boolean,
+	phone: String,
+	email: String,
+	socialMedia: {
+		whatsapp: String, //URL
+		facebook: String, //URL
+		instagram: String, //URL
+		twitter: String, //URL
+		linkedin: String, //URL
+	}
+}
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+###IconInfo
 
-### Making a Progressive Web App
+![](https://i.imgur.com/rn3RRKP.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+| Parametro | Descrição |
+| ------------ | ------------ |
+| icon | String, nome do icone [email, phone, event, group, whatsapp, facebook, instagram, twitter, linkedin, place] |
+| value | String, valor principal ou "header" |
+| description | String, valor secundario ou "subheader" |
+| color | String, nome da cor ou valor hexadecimal em String |
 
-### Advanced Configuration
+###Indicator
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+![](https://i.imgur.com/jtCdzwX.png)
 
-### Deployment
+| Parametro | Descrição |
+| ------------ | ------------ |
+| value | Number, valor a ser mostrado no indicador |
+| title | String, titulo do indicador |
+| subtitle | String, subtitulo/descrição (opcional) |
+| color | String, nome da cor ou valor hexadecimal em String |
+| isSelected | Boolean, aplica estilo de selecionado no objeto |
+| isSelectable | Boolean, aplica estilo de selecionável no objeto |
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+###MapLocation
 
-### `yarn build` fails to minify
+![](https://i.imgur.com/BsWwpP0.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+| Parametro | Descrição |
+| ------------ | ------------ |
+| data | Recebe um objeto com a estrutura especificada abaixo |
+```
+{
+	longitude: Number,
+	latitude: Number,
+	place: String,
+	description: String
+}
+```
+
+###Opportunities
+
+![](https://i.imgur.com/wlYGK4G.png)
+
+| Parametro | Descrição |
+| ------------ | ------------ |
+| data | Recebe um objeto com a estrutura especificada abaixo |
+```
+{
+	won: {
+		amount: Number,
+		value: String
+	},
+	lost: {
+		amount: Number,
+		value: String
+	},
+	open: {
+		amount: Number,
+		value: String
+	},
+	discarded: {
+		amount: Number,
+		value: String
+	}
+}
+```
+
+###SalesChart
+
+![](https://i.imgur.com/TP7YnHb.png)
+
+| Parametro | Descrição |
+| ------------ | ------------ |
+| data | Recebe um objeto com a estrutura especificada abaixo |
+```
+[
+	{
+	month: String,
+	value: Number
+	}, ...
+]
+```
+
+###SocialMedia
+
+![](https://i.imgur.com/mngraWs.png)
+
+| Parametro | Descrição |
+| ------------ | ------------ |
+| icon | String, nome do icone [email, phone, event, group, whatsapp, facebook, instagram, twitter, linkedin, place] |
+| url | String, URL |
+
+###TimelineCategory
+
+![](https://i.imgur.com/zxmA8e5.png)
+
+| Parametro | Descrição |
+| ------------ | ------------ |
+| name | String, nome da categoria |
+| color | String, nome da cor ou valor hexadecimal em String |
+| data | Recebe um objeto com a estrutura especificada abaixo |
+```
+{
+	title: String,
+	contact: String,
+	type: String ['call', 'meeting', 'event', 'email'],
+	date: String,
+	category: String ['late', 'underway', 'expected', 'finished']
+}
+```
+
+###TimelineItem
+
+![](https://i.imgur.com/n1xqDHg.png)
+
+| Parametro | Descrição |
+| ------------ | ------------ |
+| title | String, nome do item |
+| contact | String, usuario/pessoa responsável pelo item |
+| icon | String, nome do icone [email, phone, event, group, whatsapp, facebook, instagram, twitter, linkedin, place] |
+| color | String, nome da cor ou valor hexadecimal em String |
+| date | String, data em ISO 8601 |
+
+#Packages utilizados
+####react-icons
+Utilizada por conter já a maioria dos pacotes de icones com fácil acesso.
+
+####react-chartjs-2, chart.js
+Utilizada por ser um pacote que traz gráficos responsivos, animados e muito customizaveis, ainda tendo uma fácil curva de aprendizado em sua utilização. Além de eu já ter experiência com o mesmo.
+
+####pigeon-maps, pigeon-marker
+Inicialmente foi considerado utilizar um pacote que utilizasse o google maps, porém como para utiliza-lo é necessário registro e token foi decidido por esse.
+Utilizado por ser uma opção de fácil utilização e de não precisar utilizar tokens para o funcionamento do mesmo.
+
+####react-grid-system
+Utilizada para poder trazer responsividade à pagina, podendo ser vizualizada em qualquer tela e em qualquer orientação.
+
+####moment
+Utilizado para formatar as datas mostradas no painel de atividades
+
+##Packages utilizados (devDependecies)
+Foram utilizados o eslint (vem por padrão no boilerplate) e o prettier para manter o mesmo estilo de código em todos os componentes do projeto.
