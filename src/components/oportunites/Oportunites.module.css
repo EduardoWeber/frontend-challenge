@@ -1,8 +1,0 @@
-
-.indicatorGrid {
-    display: grid;
-    justify-content: space-between;
-    margin: 20px 0;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 0px;
-}
