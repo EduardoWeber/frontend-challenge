@@ -3,17 +3,18 @@ import styles from './CreditLimit.module.css';
 import Card from '../card';
 
 function CreditLimit(props) {
+  const { data } = props;
   return (
     <Card title="Limite de crédito">
       <div className={styles.creditItem}>
         <div className={styles.value} style={{ color: 'blue' }}>
-          R$ 12.000,00
+          {data.granted}
         </div>
         <div className={styles.description}>Concedido</div>
       </div>
       <div className={styles.creditItem}>
         <div className={styles.value} style={{ color: 'green' }}>
-          R$ 3.105,00
+          {data.avaliable}
         </div>
         <div className={styles.description}>Disponível</div>
       </div>

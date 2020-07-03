@@ -3,22 +3,19 @@ import styles from './TimelineCategory.module.css';
 import TimelineItem from '../timelineItem';
 
 function TimelineCategory(props) {
-  const { name, color = 'red' } = props;
+  const { name, color = 'red', data = [] } = props;
 
-  const items = [
-    {
-      title: 'Reunião',
-      contact: 'Fulano',
-      date: 'Ontem',
-      icon: 'email',
-    },
-    {
-      title: 'Reunião de grupo',
-      contact: 'Fulano',
-      date: 'Ontem',
-      icon: 'group',
-    },
-  ];
+  function getIconFromType(type) {
+    switch (type) {
+      case 'call':
+        return 'phone';
+      case 'meeting':
+        return 'group';
+      default:
+        return type;
+    }
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.timelineColumn}>
@@ -27,12 +24,12 @@ function TimelineCategory(props) {
       </div>
       <div className={styles.timelineContent}>
         <div className={styles.title}>{name}</div>
-        {items.map((item) => (
+        {data.map((item) => (
           <TimelineItem
             title={item.title}
             contact={item.contact}
             date={item.date}
-            icon={item.icon}
+            icon={getIconFromType(item.type)}
             color={color}
           />
         ))}

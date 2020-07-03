@@ -4,28 +4,35 @@ import Card from '../card';
 import Indicator from '../indicator';
 
 function Oportunites(props) {
+  const { data } = props;
+
   return (
     <Card title="Oportunidades (7)">
       <div className={styles.indicatorGrid}>
         <Indicator
-          value="4"
+          value={data.won.amount}
           title="Ganhas"
-          subtitle="R$ 20.000,00"
+          subtitle={data.won.value}
           color="green"
         />
         <Indicator
-          value="1"
+          value={data.lost.amount}
           title="Perdida"
-          subtitle="R$ 4.300,00"
+          subtitle={data.lost.value}
           color="red"
         />
         <Indicator
-          value="2"
+          value={data.open.amount}
           title="Abertas"
-          subtitle="Diversas moedas"
+          subtitle={data.open.value}
           color="blue"
         />
-        <Indicator value="0" title="Descartes" subtitle="--" color="grey" />
+        <Indicator
+          value={data.discarded.amount}
+          title="Descartes"
+          subtitle={data.discarded.value}
+          color="grey"
+        />
       </div>
     </Card>
   );

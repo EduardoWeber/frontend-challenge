@@ -4,24 +4,25 @@ import Card from '../card';
 import Indicator from '../indicator';
 
 function FinancialSecurities(props) {
+  const { data } = props;
   return (
     <Card title="Titulos financeiros">
       <div className={styles.indicatorList}>
         <Indicator
-          value="1"
-          title="R$ 3.105,00"
+          value={data.overdue.amount}
+          title={data.overdue.value}
           subtitle="Vencidos"
           color="red"
         />
         <Indicator
-          value="2"
-          title="R$ 3.105,00"
+          value={data.nearOverdue.amount}
+          title={data.nearOverdue.value}
           subtitle="A vencer"
           color="orange"
         />
         <Indicator
-          value="2"
-          title="R$ 3.105,00"
+          value={data.paid.amount}
+          title={data.paid.value}
           subtitle="Pagos"
           color="green"
         />
