@@ -1,0 +1,194 @@
+{
+    "userInfo": {
+        "name": "Justine Robinson",
+        "company": "Acme inc",
+        "isActive": true,
+        "phone": "45 9 9989 9343",
+        "email": "email@email.com",
+        "location": {
+            "longitude": -53.4561831,
+            "latitude": -24.9630502,
+            "place": "Rua X, XXXX",
+            "description": "Trabalho"
+        },
+        "socialMedia": {
+            "whatsapp": "https://web.whatsapp.com/",
+            "facebook": "https://facebook.com",
+            "instagram": "https://www.instagram.com/",
+            "twitter": "",
+            "linkedin": ""
+        }
+    },
+    "oportunities": {
+        "won": {
+            "amount": 4,
+            "value": "R$ 20.000,00"
+        },
+        "lost": {
+            "amount": 1,
+            "value": "R$ 4.300,00"
+        },
+        "open": {
+            "amount": 2,
+            "value": "Diversas moedas"
+        },
+        "discarded": {
+            "amount": 0,
+            "value": ""
+        }
+    },
+    "creditLimit": {
+        "avaliable": "R$ 3.105,00",
+        "granted": "R$ 12.000,20"
+    },
+    "financialSecurities": {
+        "overdue": {
+            "amount": 1,
+            "value": "R$ 3.105,00"
+        },
+        "nearOverdue": {
+            "amount": 1,
+            "value": "R$ 3.105,00"
+        },
+        "paid": {
+            "amount": 1,
+            "value": "R$ 3.105,00"
+        }
+    },
+    "activities": [
+        {
+            "title": "Ligação de agendamento de reunião",
+            "contact": "Carlos Ruan",
+            "type": "call",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "late"
+        },
+        {
+            "title": "Email documentação",
+            "contact": "Julio Carl",
+            "type": "email",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "late"
+        },
+        {
+            "title": "Reunião geral",
+            "contact": "Ricardo Rich",
+            "type": "meeting",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "late"
+        },
+        {
+            "title": "Evento agrícola",
+            "contact": "Tomas Luiz",
+            "type": "event",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "late"
+        },
+        {
+            "title": "Ligação de agendamento de reunião",
+            "contact": "Carlos Ruan",
+            "type": "call",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "underway"
+        },
+        {
+            "title": "Email documentação",
+            "contact": "Julio Carl",
+            "type": "email",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "underway"
+        },
+        {
+            "title": "Reunião geral",
+            "contact": "Ricardo Rich",
+            "type": "meeting",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "underway"
+        },
+        {
+            "title": "Evento agrícola",
+            "contact": "Tomas Luiz",
+            "type": "event",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "underway"
+        },
+        {
+            "title": "Ligação de agendamento de reunião",
+            "contact": "Carlos Ruan",
+            "type": "call",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "expected"
+        },
+        {
+            "title": "Email documentação",
+            "contact": "Julio Carl",
+            "type": "email",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "expected"
+        },
+        {
+            "title": "Reunião geral",
+            "contact": "Ricardo Rich",
+            "type": "meeting",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "expected"
+        },
+        {
+            "title": "Evento agrícola",
+            "contact": "Tomas Luiz",
+            "type": "event",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "expected"
+        },
+        {
+            "title": "Ligação de agendamento de reunião",
+            "contact": "Carlos Ruan",
+            "type": "call",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "finished"
+        },
+        {
+            "title": "Email documentação",
+            "contact": "Julio Carl",
+            "type": "email",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "finished"
+        },
+        {
+            "title": "Reunião geral",
+            "contact": "Ricardo Rich",
+            "type": "meeting",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "finished"
+        },
+        {
+            "title": "Evento agrícola",
+            "contact": "Tomas Luiz",
+            "type": "event",
+            "date": "2020-07-03T18:25:43.511Z",
+            "category": "finished"
+        }
+    ],
+    "sales": [
+        {
+            "month": "Janeiro",
+            "value": 1500
+        },
+        {
+            "month": "Fevereiro",
+            "value": 3000
+        },
+        {
+            "month": "Março",
+            "value": 500
+        },
+        {
+            "month": "Abril",
+            "value": 1500
+        },
+        {
+            "month": "Maio",
+            "value": 2500
+        }
+    ]
+}
