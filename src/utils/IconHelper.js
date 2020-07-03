@@ -1,11 +1,18 @@
-import { MdEmail, MdEvent, MdLocalPhone, MdGroup } from 'react-icons/md';
 import {
-  AiOutlineWhatsApp,
+  MdEmail,
+  MdEvent,
+  MdLocalPhone,
+  MdGroup,
+  MdPlace,
+} from 'react-icons/md';
+import {
   AiFillFacebook,
   AiFillInstagram,
   AiOutlineTwitter,
   AiFillLinkedin,
 } from 'react-icons/ai';
+import { FaWhatsapp } from 'react-icons/fa';
+
 import React from 'react';
 
 function getIconByName(name, color, size = '1.5em') {
@@ -19,7 +26,7 @@ function getIconByName(name, color, size = '1.5em') {
     case 'group':
       return <MdGroup size={size} color={color} />;
     case 'whatsapp':
-      return <AiOutlineWhatsApp size={size} color={color} />;
+      return <FaWhatsapp size={size} color={color} />;
     case 'facebook':
       return <AiFillFacebook size={size} color={color} />;
     case 'instagram':
@@ -28,6 +35,8 @@ function getIconByName(name, color, size = '1.5em') {
       return <AiOutlineTwitter size={size} color={color} />;
     case 'linkedin':
       return <AiFillLinkedin size={size} color={color} />;
+    case 'place':
+      return <MdPlace size={size} color={color} />;
     default:
       break;
   }
