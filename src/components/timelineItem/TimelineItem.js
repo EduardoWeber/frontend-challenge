@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './TimelineItem.module.css';
 import getIconByName from '../../utils/IconHelper';
-import moment from 'moment/min/moment-with-locales';
+import moment from 'moment';
+import 'moment/min/locales';
 
 moment.locale('pt');
 
