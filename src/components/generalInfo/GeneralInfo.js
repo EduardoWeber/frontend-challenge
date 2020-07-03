@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './GeneralInfo.module.css';
 import Card from '../../components/card';
-import ContactInfo from '../../components/contactInfo';
+import IconInfo from '../iconInfo';
 import SocialMedia from '../../components/socialMedia';
 
 function GeneralInfo(props) {
@@ -18,8 +18,8 @@ function GeneralInfo(props) {
           </div>
         </div>
       </div>
-      <ContactInfo icon="phone" value={data.phone} description="Celular" />
-      <ContactInfo icon="email" value={data.email} description="Email" />
+      <IconInfo icon="phone" value={data.phone} description="Celular" />
+      <IconInfo icon="email" value={data.email} description="Email" />
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <SocialMedia icon="whatsapp" url={data.socialMedia.whatsapp} />
         <SocialMedia icon="facebook" url={data.socialMedia.facebook} />
