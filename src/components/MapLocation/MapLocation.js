@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from '../card';
+import Card from '../Card';
 import Map from 'pigeon-maps';
 import Marker from 'pigeon-marker/react';
-import IconInfo from '../iconInfo';
+import IconInfo from '../IconInfo';
 
 function MapLocation(props) {
   const { data } = props;

@@ -1,12 +1,12 @@
 import React from 'react';
-import GeneralInfo from '../../components/generalInfo';
-import Opportunities from '../../components/opportunities';
-import CreditLimit from '../../components/creditLimit';
-import FinancialSecurities from '../../components/financialSecurities';
-import Activities from '../../components/activities';
-import SalesChart from '../../components/salesChart';
+import GeneralInfo from '../../components/GeneralInfo';
+import Opportunities from '../../components/Opportunities';
+import CreditLimit from '../../components/CreditLimit';
+import FinancialSecurities from '../../components/FinancialSecurities';
+import Activities from '../../components/Activities';
+import SalesChart from '../../components/SalesChart';
 import { Container, Row, Col } from 'react-grid-system';
-import MapLocation from '../../components/mapLocation/MapLocation';
+import MapLocation from '../../components/MapLocation/MapLocation';
 
 function Home() {
   const json = require('../../json.json');

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './TimelineCategory.module.css';
-import TimelineItem from '../timelineItem';
+import TimelineItem from '../TimelineItem';
 
 function TimelineCategory(props) {
   const { name, color = 'red', data = [] } = props;

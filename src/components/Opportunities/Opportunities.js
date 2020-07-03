@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Opportunities.module.css';
-import Card from '../card';
-import Indicator from '../indicator';
+import Card from '../Card';
+import Indicator from '../Indicator';
 
 function Opportunities(props) {
   const { data } = props;

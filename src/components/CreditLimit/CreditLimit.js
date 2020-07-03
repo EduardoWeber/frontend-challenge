@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CreditLimit.module.css';
-import Card from '../card';
+import Card from '../Card';
 
 function CreditLimit(props) {
   const { data } = props;

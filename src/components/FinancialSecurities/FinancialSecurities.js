@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './FinancialSecurities.module.css';
-import Card from '../card';
-import Indicator from '../indicator';
+import Card from '../Card';
+import Indicator from '../Indicator';
 
 function FinancialSecurities(props) {
   const { data } = props;

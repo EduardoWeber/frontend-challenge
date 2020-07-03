@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Activities.module.css';
 import { MdSearch } from 'react-icons/md';
-import Card from '../card';
-import Indicator from '../../components/indicator';
-import TimelineCategory from '../../components/timelineCategory';
+import Card from '../Card';
+import Indicator from '../Indicator';
+import TimelineCategory from '../TimelineCategory';
 
 function Activities(props) {
   const { data } = props;

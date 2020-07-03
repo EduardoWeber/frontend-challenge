@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './GeneralInfo.module.css';
-import Card from '../../components/card';
-import IconInfo from '../iconInfo';
-import SocialMedia from '../../components/socialMedia';
+import Card from '../Card';
+import IconInfo from '../IconInfo';
+import SocialMedia from '../SocialMedia';
 
 function GeneralInfo(props) {
   const { data } = props;
