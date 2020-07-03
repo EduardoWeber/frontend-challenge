@@ -26,7 +26,7 @@ function Indicator(props) {
   }
 
   return (
-    <span className={getClassName()}>
+    <div onClick={props.onClick} className={getClassName()}>
       <div className={styles.value} style={{ backgroundColor: color }}>
         {value}
       </div>
@@ -34,7 +34,7 @@ function Indicator(props) {
         <div className={styles.title}>{title}</div>
         <div className={styles.subtitle}>{subtitle}</div>
       </div>
-    </span>
+    </div>
   );
 }
 
