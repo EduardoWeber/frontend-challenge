@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './TimelineItem.module.css';
 import getIconByName from '../../utils/IconHelper';
+import moment from 'moment/min/moment-with-locales';
+
+moment.locale('pt');
 
 function TimelineItem(props) {
   const { icon, title, contact, date, color = 'yellow' } = props;
@@ -11,7 +14,9 @@ function TimelineItem(props) {
       <div className={styles.text}>
         <div className={styles.title}>{title}</div>
         <div className={styles.subtitle}>{contact}</div>
-        <div className={styles.subtitle}>{date}</div>
+        <div className={styles.subtitle}>
+          {moment(new Date(date)).fromNow()}
+        </div>
       </div>
     </div>
   );
