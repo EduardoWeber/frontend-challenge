@@ -1,0 +1,45 @@
+
+.searchBar {
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid #C2C2C2;
+    padding: 3px;
+    margin: 10px 0px;
+}
+
+.icon {
+    margin: 0px 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.inputField {
+    flex: 1;
+    display: flex;
+}
+
+.grid {
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridItem {
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-flex;
+}
+
+.input {
+    flex: 1;
+    outline: none;
+    border-width: 0px;
+    font-size: medium;
+}
+
+.timeline {
+    flex: 1 1 auto;
+    overflow: auto;
+    height: 50vh;
+}
