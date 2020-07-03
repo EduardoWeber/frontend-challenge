@@ -34,15 +34,30 @@ function Activities(props) {
     return filtered.filter((item) => item.category === category).length;
   }
 
-  function getTimelineCategory(category) {
+  function getTimelineCategory(category, color) {
+    function getNameFromCategory(category) {
+      switch (category) {
+        case 'late':
+          return 'Em atraso';
+        case 'underway':
+          return 'Em andamento';
+        case 'expected':
+          return 'Previstas';
+        case 'finished':
+          return 'Concluídas';
+        default:
+          return '';
+      }
+    }
+
     if (
       isCategoryEnabled(category) &&
       getAmountActivitiesByCategory(category)
     ) {
       return (
         <TimelineCategory
-          name="Concluídas"
-          color="green"
+          name={getNameFromCategory(category)}
+          color={color}
           data={getActivitiesByCategory(category)}
         />
       );
@@ -118,10 +133,10 @@ function Activities(props) {
         </div>
       </div>
       <div className={styles.timeline}>
-        {getTimelineCategory('late')}
-        {getTimelineCategory('underway')}
-        {getTimelineCategory('expected')}
-        {getTimelineCategory('finished')}
+        {getTimelineCategory('late', 'red')}
+        {getTimelineCategory('underway', 'blue')}
+        {getTimelineCategory('expected', 'orange')}
+        {getTimelineCategory('finished', 'green')}
       </div>
     </Card>
   );
