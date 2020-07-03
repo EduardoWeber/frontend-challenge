@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - [Packages utilizados](#Packages-utilizados)
 
 
-#Introdução
+# Introdução
 ## Descrição do projeto
 Nesse projeto foi reproduzido a tela proposta na [frontend-challenge](https://github.com/WealthSystems/frontend-challenge) da WealthSystems
 
@@ -29,10 +29,9 @@ Abra [http://localhost:3000](http://localhost:3000) para vizualizar o projeto.
 
 Faz o *build* do projeto pra pasta `build`.<br />
 
-#Documentação
-(#componentes)
-##Componentes
-###Activities
+# Documentação
+## Componentes
+### Activities
 
 ![](https://i.imgur.com/TxOjmki.png)
 
@@ -50,14 +49,14 @@ Faz o *build* do projeto pra pasta `build`.<br />
 	}
 ]
 ```
-###Card
+### Card
 | Parametro | Descrição |
 | ------------ | ------------ |
 | title | Titulo do card |
 | children* | Conteudo do card |
 **children não é uma prop e sim o conteudo que se encontra entre <Card> e </Card>*
 
-###CreditLimit
+### CreditLimit
 
 ![](https://i.imgur.com/zw32yiE.png)
 
@@ -72,7 +71,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 }
 ```
 
-###FinancialSecurities
+### FinancialSecurities
 
 ![](https://i.imgur.com/dlHDCzk.png)
 
@@ -96,7 +95,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 }
 ```
 
-###GeneralInfo
+### GeneralInfo
 
 ![](https://i.imgur.com/R5nJEYf.png)
 
@@ -120,7 +119,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 }
 ```
 
-###IconInfo
+### IconInfo
 
 ![](https://i.imgur.com/rn3RRKP.png)
 
@@ -131,7 +130,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 | description | String, valor secundario ou "subheader" |
 | color | String, nome da cor ou valor hexadecimal em String |
 
-###Indicator
+### Indicator
 
 ![](https://i.imgur.com/jtCdzwX.png)
 
@@ -144,7 +143,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 | isSelected | Boolean, aplica estilo de selecionado no objeto |
 | isSelectable | Boolean, aplica estilo de selecionável no objeto |
 
-###MapLocation
+### MapLocation
 
 ![](https://i.imgur.com/BsWwpP0.png)
 
@@ -160,7 +159,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 }
 ```
 
-###Opportunities
+### Opportunities
 
 ![](https://i.imgur.com/wlYGK4G.png)
 
@@ -188,7 +187,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 }
 ```
 
-###SalesChart
+### SalesChart
 
 ![](https://i.imgur.com/TP7YnHb.png)
 
@@ -204,7 +203,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 ]
 ```
 
-###SocialMedia
+### SocialMedia
 
 ![](https://i.imgur.com/mngraWs.png)
 
@@ -213,7 +212,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 | icon | String, nome do icone [email, phone, event, group, whatsapp, facebook, instagram, twitter, linkedin, place] |
 | url | String, URL |
 
-###TimelineCategory
+### TimelineCategory
 
 ![](https://i.imgur.com/zxmA8e5.png)
 
@@ -232,7 +231,7 @@ Faz o *build* do projeto pra pasta `build`.<br />
 }
 ```
 
-###TimelineItem
+### TimelineItem
 
 ![](https://i.imgur.com/n1xqDHg.png)
 
@@ -244,22 +243,22 @@ Faz o *build* do projeto pra pasta `build`.<br />
 | color | String, nome da cor ou valor hexadecimal em String |
 | date | String, data em ISO 8601 |
 
-#Packages utilizados
-####react-icons
+# Packages utilizados
+#### react-icons
 Utilizada por conter já a maioria dos pacotes de icones com fácil acesso.
 
-####react-chartjs-2, chart.js
+#### react-chartjs-2, chart.js
 Utilizada por ser um pacote que traz gráficos responsivos, animados e muito customizaveis, ainda tendo uma fácil curva de aprendizado em sua utilização. Além de eu já ter experiência com o mesmo.
 
-####pigeon-maps, pigeon-marker
+#### pigeon-maps, pigeon-marker
 Inicialmente foi considerado utilizar um pacote que utilizasse o google maps, porém como para utiliza-lo é necessário registro e token foi decidido por esse.
 Utilizado por ser uma opção de fácil utilização e de não precisar utilizar tokens para o funcionamento do mesmo.
 
-####react-grid-system
+#### react-grid-system
 Utilizada para poder trazer responsividade à pagina, podendo ser vizualizada em qualquer tela e em qualquer orientação.
 
-####moment
+#### moment
 Utilizado para formatar as datas mostradas no painel de atividades
 
-##Packages utilizados (devDependecies)
+## Packages utilizados (devDependecies)
 Foram utilizados o eslint (vem por padrão no boilerplate) e o prettier para manter o mesmo estilo de código em todos os componentes do projeto.
