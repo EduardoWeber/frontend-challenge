@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "moment": "^2.27.0",
     "pigeon-maps": "^0.15.0",
     "pigeon-marker": "^0.3.4",
